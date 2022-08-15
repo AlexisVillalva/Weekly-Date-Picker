@@ -153,15 +153,15 @@ class _WeeklyDatePickerState extends State<WeeklyDatePicker> {
       child: GestureDetector(
         onTap: () => widget.changeDay(dateTime),
         child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 3),
+          margin: EdgeInsets.symmetric(horizontal: 3, vertical: 3),
           decoration: BoxDecoration(
-              color: Colors.transparent,
+              color: Colors.white,
               borderRadius: BorderRadius.circular(15),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black12,
                   offset: Offset(0, 1),
-                  blurRadius: 5,
+                  blurRadius: 3,
                 )
               ]),
           // Bugfix, the transparent container makes the GestureDetector fill the Expanded
